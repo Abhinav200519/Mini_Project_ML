@@ -1,64 +1,105 @@
-Forecasting Student Dropouts and Academic Success
+# 🎓 Forecasting Student Dropouts and Academic Success
 
-Steps to Run the Notebook Locally
+This project predicts **student dropout risk** and **academic success** using data-driven machine learning models.  
+It helps educational institutions identify at-risk students early and improve academic outcomes through actionable insights.
 
-Ensure Python is Installed
-Make sure you have Python 3.8 or higher installed.
-You can check by running:
+---
 
+## 🚀 Features
+
+- Load and preprocess student performance data  
+- Perform **Exploratory Data Analysis (EDA)** with visual insights  
+- Train multiple **classification and regression models**  
+- Evaluate model performance with metrics and graphs  
+- Visualize **feature importance** and predictive factors  
+- Interactive visualizations powered by **Plotly**
+
+---
+
+## 🧠 Tech Stack
+
+- **Python 3.8+**
+- **Jupyter Notebook**
+- **Machine Learning:** scikit-learn, XGBoost  
+- **Data Analysis & Visualization:** pandas, numpy, matplotlib, seaborn, plotly
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Ensure Python is Installed
+
+Check if Python 3.8 or higher is installed:
+```bash
 python --version
+If not, download it from python.org.
 
+2. Open Terminal / Command Prompt
+Navigate to your project directory:
 
-Open a Terminal or Command Prompt
-Navigate to the folder where your notebook and dataset are saved, for example:
-
+bash
+Copy code
 cd "C:\Users\<YourName>\Documents\StudentDropoutProject"
+3. Create and Activate a Virtual Environment (Recommended)
+For Windows:
 
-
-Create and Activate a Virtual Environment (recommended)
-
+bash
+Copy code
 python -m venv venv
-venv\Scripts\activate         # For Windows
-source venv/bin/activate      # For macOS/Linux
+venv\Scripts\activate
+For macOS/Linux:
 
+bash
+Copy code
+python3 -m venv venv
+source venv/bin/activate
+4. Install Dependencies
+Install all required libraries:
 
-Install Required Dependencies
-Install all the necessary Python libraries using pip:
-
+bash
+Copy code
 pip install pandas numpy scikit-learn matplotlib seaborn plotly xgboost jupyter
+5. Launch Jupyter Notebook
+Run the following command:
 
-
-Launch Jupyter Notebook
-Start the notebook environment:
-
+bash
+Copy code
 jupyter notebook
+6. Open and Run the Notebook
+In Jupyter, open:
 
-
-Open and Run the Notebook
-
-In Jupyter, open the file:
+Copy code
 Forecasting_Student_Dropouts_and_Academic_Success.ipynb
+Run each cell in order (Shift + Enter) to execute.
 
-Run each cell in order (Shift + Enter).
+📊 What the Notebook Does
+Loads and preprocesses the student dataset
 
-The notebook will:
+Performs Exploratory Data Analysis (EDA)
 
-Load and preprocess the student dataset
+Trains ML models for:
 
-Perform exploratory data analysis (EDA)
+Classification: Predict dropout risk
 
-Train classification and regression models
+Regression: Predict academic performance (e.g., final grades)
 
-Evaluate and display performance metrics
+Evaluates models with accuracy, precision, recall, and R² score
 
-Generate visual insights and feature importance charts
+Visualizes results — feature importance, confusion matrix, performance metrics
 
-Dependencies List
+🧩 Dependencies List
 pandas
+
 numpy
+
 scikit-learn
+
 matplotlib
+
 seaborn
+
 plotly
+
 xgboost
+
 jupyter
