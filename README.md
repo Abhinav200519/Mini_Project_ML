@@ -1,3 +1,8 @@
+Here’s a clean and well-structured **README.md** file you can include in your project folder:
+
+---
+
+````markdown
 # 🎓 Forecasting Student Dropouts and Academic Success
 
 This project predicts **student dropout risk** and **academic success** using data-driven machine learning models.  
@@ -32,74 +37,113 @@ It helps educational institutions identify at-risk students early and improve ac
 Check if Python 3.8 or higher is installed:
 ```bash
 python --version
-If not, download it from python.org.
+````
 
-2. Open Terminal / Command Prompt
+If not, download it from [python.org](https://www.python.org/downloads/).
+
+---
+
+### 2. Open Terminal / Command Prompt
+
 Navigate to your project directory:
 
-bash
-Copy code
+```bash
 cd "C:\Users\<YourName>\Documents\StudentDropoutProject"
-3. Create and Activate a Virtual Environment (Recommended)
-For Windows:
+```
 
-bash
-Copy code
+---
+
+### 3. Create and Activate a Virtual Environment (Recommended)
+
+**For Windows:**
+
+```bash
 python -m venv venv
 venv\Scripts\activate
-For macOS/Linux:
+```
 
-bash
-Copy code
+**For macOS/Linux:**
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
-4. Install Dependencies
+```
+
+---
+
+### 4. Install Dependencies
+
 Install all required libraries:
 
-bash
-Copy code
+```bash
 pip install pandas numpy scikit-learn matplotlib seaborn plotly xgboost jupyter
-5. Launch Jupyter Notebook
+```
+
+---
+
+### 5. Launch Jupyter Notebook
+
 Run the following command:
 
-bash
-Copy code
+```bash
 jupyter notebook
-6. Open and Run the Notebook
+```
+
+---
+
+### 6. Open and Run the Notebook
+
 In Jupyter, open:
 
-Copy code
+```
 Forecasting_Student_Dropouts_and_Academic_Success.ipynb
-Run each cell in order (Shift + Enter) to execute.
+```
 
-📊 What the Notebook Does
-Loads and preprocesses the student dataset
+Run each cell in order (**Shift + Enter**) to execute.
 
-Performs Exploratory Data Analysis (EDA)
+---
 
-Trains ML models for:
+## 📊 What the Notebook Does
 
-Classification: Predict dropout risk
+1. **Loads and preprocesses** the student dataset
+2. Performs **Exploratory Data Analysis (EDA)**
+3. Trains ML models for:
 
-Regression: Predict academic performance (e.g., final grades)
+   * **Classification:** Predict dropout risk
+   * **Regression:** Predict academic performance (e.g., final grades)
+4. **Evaluates models** with accuracy, precision, recall, and R² score
+5. **Visualizes results** — feature importance, confusion matrix, performance metrics
 
-Evaluates models with accuracy, precision, recall, and R² score
+---
 
-Visualizes results — feature importance, confusion matrix, performance metrics
+## 🧩 Dependencies List
 
-🧩 Dependencies List
-pandas
+* pandas
+* numpy
+* scikit-learn
+* matplotlib
+* seaborn
+* plotly
+* xgboost
+* jupyter
 
-numpy
+Install all at once with:
 
-scikit-learn
+```bash
+pip install -r requirements.txt
+```
 
-matplotlib
+---
 
-seaborn
+## 📁 Project Structure
 
-plotly
+```
+StudentDropoutProject/
+│
+├── Forecasting_Student_Dropouts_and_Academic_Success.ipynb
+├── dataset.csv
+├── requirements.txt
+├── README.md
+└── venv/                  # (optional virtual environment)
+```
 
-xgboost
-
-jupyter
